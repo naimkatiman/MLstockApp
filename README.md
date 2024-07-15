@@ -43,7 +43,7 @@ Follow these steps to get the project up and running on your local machine.
 
     bash
 
-python -m venv venv
+   python -m venv venv
 
 Activate the virtual environment:
 
@@ -51,7 +51,7 @@ Activate the virtual environment:
 
     bash
 
-venv\Scripts\activate
+   venv\Scripts\activate
 
 On macOS/Linux:
 
@@ -63,7 +63,7 @@ Install the required packages:
 
 bash
 
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 Set up environment variables:
 
@@ -75,17 +75,20 @@ Example:
 env
 
 TWITTER_API_KEY=your_api_key
+
 TWITTER_API_SECRET_KEY=your_api_secret_key
+
 TWITTER_ACCESS_TOKEN=your_access_token
+
 TWITTER_ACCESS_TOKEN_SECRET=your_access_token_secret
 
 Initialize the database:
 
 bash
 
-flask db init
-flask db migrate -m "Initial migration."
-flask db upgrade
+   flask db init
+   flask db migrate -m "Initial migration."
+   flask db upgrade
 
 Run the application:
 
@@ -139,11 +142,7 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 Contact
 
-For any inquiries or feedback, please contact:
 
-    Naim Katiman
-    Email: naim@example.com
-    GitHub: naimkatiman
 =======
 [![DOI](https://zenodo.org/badge/742607049.svg)](https://zenodo.org/doi/10.5281/zenodo.10498988)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/blob/master/LICENSE)
@@ -186,38 +185,6 @@ For any inquiries or feedback, please contact:
 <img src="https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/blob/master/screenshots/11-resuts.png" width="750">
 <img src="https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/blob/master/screenshots/wp-admin.PNG" width="750">
 
-**Admin Creds:** <br/>
-Username: admin <br/>
-Email Address: stockpredictorapp@gmail.com <br/>
-Password: Samplepass@123 <br/>
-
-There are two roles in the system: **Admin** and **User**.<br/><br/>
-Users can:<br/>
-<ol>
-    <li>Register and Login </li>
-    <li>Check Real Time stock prices</li>
-    <li>Read recent news about different stocks</li>
-    <li>Currency Converter</li>
-    <li>Edit or delete their own profile</li>
-    <li>Educate the user about stocks</li>
-    <li>Download list of stock tickers</li>
-    <li>Predict Stock prices for the next 7 days for all NASDAQ and NSE stocks</li>
-</ol>
-
-Admin can:<br/>
-<ol>
-    <li>Create, Retrieve, Update Delete Users.</li>
-    <li>Manually trigger emails.</li>
-    <li>Register and Login </li>
-    <li>Check Real Time stock prices</li>
-    <li>Read recent news about different stocks</li>
-    <li>Currency Converter</li>
-    <li>Edit or delete their own profile</li>
-    <li>Educate the user about stocks</li>
-    <li>Download list of stock tickers</li>
-    <li>Predict Stock prices for the next 7 days for all NASDAQ and NSE stocks</li>
-</ol>
-
 ## Built With
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
@@ -245,26 +212,3 @@ Admin can:<br/>
 5. Run ```python main.py``` to start server.
 7. Go to ```localhost/wordpress``` to access the app.
 
-Find more screenshots in the <b>screenshots folder</b> Or <a href="https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/tree/master/screenshots">click here</a>
-
-
-## Authors
-### Kaushik Jadhav
-<ul>
-<li>Github: https://github.com/kaushikjadhav01</li>
-<li>Medium: https://medium.com/@kaushikjadhav01</li>
-<li>LinkedIn: https://www.linkedin.com/in/kaushikjadhav01/</li>
-<li>Portfolio: http://kajadhav.me/</li>
-<li>Linked In: https://www.linkedin.com/in/kajadhav/
-<li>Dev.to: https://dev.to/kaushikjadhav01
-<li>Codesignal: https://app.codesignal.com/profile/kaushik_j_vtc
-<li>Google Scholar: https://scholar.google.com/citations?user=iRYcFi0AAAAJ
-<li>Daily.dev: https://app.daily.dev/kaushikjadhav01
-<li>Google devs: https://developers.google.com/profile/u/kaushikjadhav01
-<li>Stack Overflow: https://stackoverflow.com/users/21890981/kaushik-jadhav
-</ul>
-
-## Links
-* [Issue tracker](https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/issues)
-* [Source code](https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis)
->>>>>>> 5fd7b9f (update on github)
