@@ -1,7 +1,6 @@
+# MLstockApp: Stock Market Prediction Web App using Machine Learning and Sentiment Analysis
 
-# Stock Market Prediction Web App using Machine Learning and Sentiment Analysis
-
-This project is a web application designed to predict stock market trends using a combination of machine learning algorithms and sentiment analysis of tweets. By integrating real-time public sentiment with historical data, the app aims to provide more accurate and timely investment insights.
+This project is a web application designed to predict stock market trends using a combination of machine learning algorithms and sentiment analysis of tweets. By integrating real-time public sentiment with historical data, MLstockApp aims to provide more accurate and timely investment insights.
 
 ## Table of Contents
 
@@ -38,79 +37,66 @@ Follow these steps to get the project up and running on your local machine.
    ```bash
    git clone https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis.git
    cd Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis
+   ```
 
-    Create a virtual environment:
-
-    bash
-
+2. **Create a virtual environment:**
+   ```bash
    python -m venv venv
+   ```
 
-Activate the virtual environment:
+3. **Activate the virtual environment:**
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
 
-    On Windows:
-
-    bash
-
-   venv\Scripts\activate
-
-On macOS/Linux:
-
-bash
-
-    source venv/bin/activate
-
-Install the required packages:
-
-bash
-
+4. **Install the required packages:**
+   ```bash
    pip install -r requirements.txt
+   ```
 
-Set up environment variables:
+5. **Set up environment variables:**
+   - Create a `.env` file in the root directory of the project.
+   - Add your Twitter API keys and other necessary configurations to the `.env` file.
 
-    Create a .env file in the root directory of the project.
-    Add your Twitter API keys and other necessary configurations to the .env file.
+   Example:
+   ```env
+   TWITTER_API_KEY=your_api_key
+   TWITTER_API_SECRET_KEY=your_api_secret_key
+   TWITTER_ACCESS_TOKEN=your_access_token
+   TWITTER_ACCESS_TOKEN_SECRET=your_access_token_secret
+   ```
 
-Example:
-
-env
-
-TWITTER_API_KEY=your_api_key
-
-TWITTER_API_SECRET_KEY=your_api_secret_key
-
-TWITTER_ACCESS_TOKEN=your_access_token
-
-TWITTER_ACCESS_TOKEN_SECRET=your_access_token_secret
-
-Initialize the database:
-
-bash
-
+6. **Initialize the database:**
+   ```bash
    flask db init
    flask db migrate -m "Initial migration."
    flask db upgrade
+   ```
 
-Run the application:
+7. **Run the application:**
+   ```bash
+   flask run
+   ```
 
-bash
+8. **Access the application:**
+   Open your browser and navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
-    flask run
+## Usage
 
-    Access the application:
-    Open your browser and navigate to http://127.0.0.1:5000.
+1. **Register/Login**: Create an account or log in to access the application.
+2. **Select Stock**: Choose the stock you want to analyze.
+3. **Fetch Data**: The application will retrieve historical stock data and live tweets related to the selected stock.
+4. **View Predictions**: Analyze the predicted stock prices and sentiment analysis results on the interactive dashboard.
 
-Usage
+## Project Structure
 
-    Register/Login: Create an account or log in to access the application.
-    Select Stock: Choose the stock you want to analyze.
-    Fetch Data: The application will retrieve historical stock data and live tweets related to the selected stock.
-    View Predictions: Analyze the predicted stock prices and sentiment analysis results on the interactive dashboard.
-
-Project Structure
-
-arduino
-
-Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/
+```plaintext
+MLstockApp/
 │
 ├── app/
 │   ├── __init__.py
@@ -126,16 +112,25 @@ Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/
 ├── README.md
 ├── requirements.txt
 └── run.py
+```
 
-Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
-    Fork the repository.
-    Create a new branch (git checkout -b feature-branch).
-    Commit your changes (git commit -am 'Add new feature').
-    Push to the branch (git push origin feature-branch).
-    Open a Pull Request.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, feel free to open an issue or contact us at [your_email@example.com].
 
 =======
 [![DOI](https://zenodo.org/badge/742607049.svg)](https://zenodo.org/doi/10.5281/zenodo.10498988)
@@ -163,10 +158,8 @@ Contributions are welcome! Please follow these steps:
 ## System Description and Functions
 
 **Screenshots:** <br/>
-<img src="https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/blob/master/screenshots/banner.png">
-<img src="https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/blob/master/screenshots/banner2.PNG">
 <img src="https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/blob/master/screenshots/11-resuts.png" width="750">
-<img src="https://github.com/kaushikjadhav01/Stock-Market-Prediction-Web-App-using-Machine-Learning-And-Sentiment-Analysis/blob/master/screenshots/wp-admin.PNG" width="750">
+
 
 ## Built With
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
