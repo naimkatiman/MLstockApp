@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Stock Market Prediction Web App using Machine Learning and Sentiment Analysis
 
 This project is a web application designed to predict stock market trends using a combination of machine learning algorithms and sentiment analysis of tweets. By integrating real-time public sentiment with historical data, the app aims to provide more accurate and timely investment insights.
